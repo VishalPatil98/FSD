@@ -4,30 +4,36 @@ class LIS
 {
 	public static void main(String[] args) 
 	{
-		int[] a= {3,9,1,10,4,20,2,11,12};
-		HashSet<Integer>hs=new HashSet<>();
-		for(int i=0;i<a.length;i++)
+		int arr[] = { 10, 8, 7, 3, 21, 50,5,71};
+		System.out.println("The Given array is :");
+		for (int i = 0; i < arr.length; i++) 
 		{
-			hs.add(a[i]);
+			System.out.print(arr[i]+" ");
 		}
-		int long_leng=0;
-		for(int i=0;i<a.length;i++)
-		{
-			if(!hs.contains(a[i]-1))
-			{
-				int no=a[i];
-				while(hs.contains(no)) 
-				{
-					no++;
-				}
-				if(long_leng<no-a[i])
-				{
-					long_leng=no-a[i];
-				}
-			}
-		}
-		System.out.println("Longest Subsequence length is "+long_leng);
+	    ArrayList<Integer> list = new ArrayList<Integer>();
+	    int current_Max;
+	    int highestCount = 0;
+	    for(int i = 0; i < arr.length;i++)
+	    {
+	    	current_Max = Integer.MIN_VALUE;
+	        for(int j = i;j < arr.length; j++)
+	        {
+	            if(arr[j] > current_Max)
+	            {
+	                list.add(arr[j]);
+	                current_Max = arr[j];
+	            }
+	        }	         
+	        //Comparing previous highest subsequence
+	        if(highestCount < list.size())
+	        {
+	            highestCount = list.size();
+	        }  
+	        list.clear();
+	    }
+	    System.out.println();
+	    System.out.println("The Longest subsequence is :"+ highestCount);
 	}
-
 }
-
+	
+	
