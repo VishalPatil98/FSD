@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+     
+     <bean id="s" class="springhibernatedemo.firstspring.Student">
+     <property name="id" value="150"></property>
+     <property name="name" value="rohan"></property>
+     <!-- Passing bean of another class to the bean -->
+     <property name="mark" ref="m"></property>
+     </bean>
+     <!-- bean for Marks Class -->
+     <bean id="m" class="springhibernatedemo.firstspring.Marks">
+		<property name="english" value="98"></property> 
+		<property name="dsa" value="85.5"></property> 
+		<property name="math" value="89.98"></property>     
+     </bean>      
+</beans>
