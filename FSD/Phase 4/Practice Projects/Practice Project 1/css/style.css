@@ -1,0 +1,187 @@
+body {
+  background: rgb(244, 246, 247);
+  color: #fff;
+    
+}
+#navbarCollapse h4{
+  color: #11e62e;
+}
+.navbar {
+  border-bottom: #11e62e 3px solid;
+  opacity: 0.8;
+}
+#home-section {
+  background: url(../img/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  background: rgba(0, 0, 0, 0.7);
+}
+#home-section .home-inner {
+  padding-top: 150px;
+}
+#home-section .card-form {
+  opacity: 0.8;
+}
+#home-section .fas,
+#create-section .fas {
+  color: #008ed6;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+#explore-section .fas,
+#share-section .fas {
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.bg-one {
+  background-color: rgb(35, 167, 31);
+  border: 2px solid green;
+  }
+.bg-two {
+  background-color: rgb(37, 24, 6);
+  border: 2px solid brown;
+}
+.bg-three {
+  background-color: rgb(73, 70, 24);
+  border: 2px solid green;
+}
+.bg-dark {
+  background-color: #0d0e0e!important;
+}
+.alert {
+  margin-bottom: 0rem !important;
+}
+.form-container{
+  border: 2px solid green;
+  padding: 40px;
+}
+p {
+  font-size: 25px;
+  color: bisque;
+}
+/*---------------------------------------------*/
+.about-section .text-sec {
+  padding-top: 50px;
+  padding-left: 2rem;
+}
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x)/ 2);
+  padding-left: calc(var(--bs-gutter-x)/ 2);
+  margin-top: var(--bs-gutter-y);
+}
+#paraOne
+{
+  color: black;
+  font-weight: bold;
+}
+#paraTwo{
+color: #0d0e0e;
+}
+.footer {
+  background-color: coral;
+}
+.py-5 {
+  padding-top: 3rem!important;
+  padding-bottom: 3rem!important;
+}
+a, a:hover {
+  text-decoration: none;
+}
+a {
+  color:black;
+  font-size: 50px;
+  text-decoration: underline;
+  padding-left: 20px;;
+}
+.dark-overlay
+{
+  padding-top: 100px;
+  color: black;
+  font-weight: bold;
+}
+.hearderset h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: brown;
+}
+.team h4{
+  color: blue;
+  font-weight: bold;
+}
+.team p{
+  color: black;
+  font-weight: bolder;
+}
+#home-section h1{
+  color: white;
+  size: 150px;
+  padding-left:300px;
+}
+.speciality{
+  padding-top: 200px;
+  color: black;
+}
+.container text-center h1{
+  color: blue;
+  font-weight: bold;
+}
+.contact{
+  padding-top: 150px;
+}
+.contact .add{
+  color: blue;
+  font-size: 100px;
+  text-align: center;
+}
+.contact .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap:1.5rem;
+}
+.box 
+{
+  padding-left: 500px; 
+}
+.contact .box-container .box h3{
+
+  font-size: 2.5rem;
+  color:var(--black);
+  text-align: center;
+}
+
+.contact .box-container .box a{
+  display: block;
+  padding: 1rem;
+  font-size: 1rem;
+  color:var(--light-color);
+  text-align: center;
+}
+.contact .box-container .box a:hover{
+  color:var(--green);
+  text-decoration: underline;
+}
+.box h2{
+  color: black;
+}
+.box .tagg
+{
+  color: black;
+}
+.details{
+  color: black;
+}
