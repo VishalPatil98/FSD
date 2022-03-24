@@ -1,0 +1,121 @@
+body 
+{
+  color: #fff;
+}
+.navbar 
+{
+  border-bottom: #ac8a2c 3px solid;
+  opacity: 0.8;
+}
+#home-section 
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 200px;
+}
+#home-section .dark-overlay 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 200px;
+  background: rgba(9, 3, 15, 0.7);
+}
+#home-section .home-inner
+{
+  padding-top: 150px;
+}
+#home-section .card-form 
+{
+  opacity: 0.8;
+}
+#home-section .fas,
+#create-section .fas 
+{
+  color: #0a0b0c;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+#explore-head-section 
+{  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 1200px;
+}
+#explore-section .fas,
+#share-section .fas 
+{
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.bg-one
+ {
+  background-color: rgb(65, 161, 161);
+  border: 2px solid green;
+ }
+table 
+{
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 4px;
+}
+.alert 
+{
+  margin-bottom: 0rem !important;
+}
+.form-container
+{
+  border: 2px solid green;
+  padding: 40px;  
+}
+p 
+{
+  font-size: 25px;
+  color: bisque;
+}
+#Budget-head-section
+{
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: rgb(4, 12, 12);
+  height: 1080px;
+}
+#exprow
+{
+margin-top: 10px;
+}
+#exprow #cardd
+{
+  background-color: bisque;
+}
+.container #expp
+{
+  color: #0a0b0c;
+}
+.main 
+{
+  padding-top: 100px;
+}
+.main #cardd
+{
+  background-color: bisque;
+}
+.container
+{
+  text-align: center;
+  color:#ac8a2c;
+  font-weight: bold;
+  font-size: 20px;
+}
+.container h1
+{
+  padding-left: 400px;
+  color:white;
+  font-weight: bold;
+}
