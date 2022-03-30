@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>List OF User Details</title>
+</head>
+<body>
+<div align="center">
+<H1>List of All The Users</H1>
+<br/>
+ <table border="1" cellpadding="10">
+   <thead>
+     <tr>
+        <th>UserId</th>
+        <th>UserName</th>
+        <th>email Id</th>
+        <th>Phone</th>
+        <th>Product Purchased</th>
+        <th>Purchased Date</th>
+        <th>Category</th>
+      </tr>
+     </thead>
+     <tbody>
+       <tr th:each="userdetails : ${listUsers}">
+          <td th:text="${userdetails.userId}">UserId</td>
+          <td th:text="${userdetails.username}">UserName</td>
+          <td th:text="${userdetails.emailId}">email Id</td>
+          <td th:text="${userdetails.phone}">Phone</td>
+          <td th:text="${userdetails.productPerchased}">Product Perchased</td>
+          <td th:text="${userdetails.perchaseDate}">Perchase Date</td>
+          <td th:text="${userdetails.category}">Category</td>
+
+        </tr>
+     </tbody>
+     </table>
+     <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <a th:href="menu.html"><h3>Go To Dashboard</h3></a>
+         <br>
+         <br>
+     <a href="/logout">LogOut</a>
+   </div>
+</body>
+</html>

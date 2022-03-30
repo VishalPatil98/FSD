@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page-Sporty Shoes</title>
+</head>
+<body>
+<center>
+<h1 style="color: green;">Welcome To Sporty Shoes Web App</h2>
+<form action="#" th:action="@{/adminlogin}" th:object="${user}"method="post">
+<h2 style="color: blue;">Admin Login</h2>
+<h3>
+Username <input type="text" th:field="*{username}" placeholder="Enter username">
+<br>
+<br>
+Password <input type="password" th:field="*{password}" placeholder="Enter password">
+<br>
+<br>
+<input type="submit" value="Login">	
+</h3>					
+</form>
+</center>
+</body>
+</html>

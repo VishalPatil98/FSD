@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create New Category</title>
+</head>
+<body>
+<div aling="center">
+ <h1>Create New Product</h1>
+    <br/>
+     <form action="#" th:action="@{/saveproduct}" th:object="${product}"
+            method="post">
+ 
+            <table border="0" cellpadding="10">
+                <tr>
+                    <td>Product Name:</td>
+                    <td><input type="text" th:field="*{productName}" placeholder="Enter Product name"/></td>
+                </tr>  
+                <tr>
+                    <td>Category:</td>
+                    <td><input type="text" th:field="*{category}" placeholder="Enter Product Category"/></td>
+                </tr> 
+                <tr>
+                    <td>Price:</td>
+                    <td><input type="text" th:field="*{price}"placeholder="Enter Price" /></td>
+                </tr> 
+                <tr>
+                    <td>Status:</td>
+                    <td><input type="text" th:field="*{status}" placeholder="Availability Status"/></td>
+                </tr> 
+                <tr>
+                    <td>size:</td>
+                    <td><input type="text" th:field="*{size}" placeholder="Available Sizes" /></td>
+                </tr> 
+                                        
+                <tr>
+                    <td colspan="2"><button type="submit">Add Product</button> </td>
+                </tr>
+            </table>
+        </form>
+        <a href="/listprod">Go To Product Section</a>
+         <br>
+</div>
+</body>
+</html>

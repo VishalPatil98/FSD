@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Category Section</title>
+</head>
+<body>
+<center>
+ <h1>Create New Category</h1>
+
+     <form action="#" th:action="@{/save}" th:object="${categories}"
+            method="post">
+ 
+            <table border="0" cellpadding="10">
+                <tr>
+                    <td>Category Name:</td>
+                    <td><input type="text" th:field="*{categoryName}" placeholder="Enter name" /></td>
+                </tr>                            
+                <tr>
+                    <td colspan="2"><button type="submit">Add Category</button> </td>
+                </tr>
+            </table>
+        </form>
+         <a href="/listcat"><h3>Go To Category Section</h3></a>
+         
+       
+</center>
+</body>
+</html>>
